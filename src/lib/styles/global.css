@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+@import '@skeletonlabs/skeleton/themes/cerberus';
+
+/* ---- Custom overrides ---- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	line-height: 1.6;
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	transition: opacity 0.2s ease;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+}
+
+::selection {
+	background: rgba(255, 255, 255, 0.15);
+}
