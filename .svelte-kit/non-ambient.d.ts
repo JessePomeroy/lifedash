@@ -40,7 +40,7 @@ declare module "$app/types" {
 			"/settings": Record<string, never>;
 			"/tasks": Record<string, never>
 		};
-		Pathname(): "/" | "/goals" | "/goals/" | "/habits" | "/habits/" | "/journal" | "/journal/" | "/schedule" | "/schedule/" | "/settings" | "/settings/" | "/tasks" | "/tasks/";
+		Pathname(): "/" | "/goals" | "/habits" | "/journal" | "/schedule" | "/settings" | "/tasks";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
 		Asset(): "/manifest.json" | string & {};
 	}

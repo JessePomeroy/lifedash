@@ -14,8 +14,8 @@
 			<p class="mt-1 text-xs text-white/40">Currently using Cerberus (dark)</p>
 		</div>
 		<div class="rounded-xl border border-white/5 bg-surface-800 p-5">
-			<h2 class="text-sm font-medium text-white">Jazz Sync</h2>
-			<p class="mt-1 text-xs text-white/40">Not connected — configure in .env</p>
+			<h2 class="text-sm font-medium text-white">Authentication</h2>
+			<p class="mt-1 text-xs text-white/40">Not configured — implement your own auth</p>
 		</div>
 	</div>
 </div>

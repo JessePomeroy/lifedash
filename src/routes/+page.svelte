@@ -1,5 +1,5 @@
 <script lang="ts">
-	// Dashboard — overview/stats
+	// TODO: Add your own auth/data solution here
 </script>
 
 <svelte:head>
@@ -13,19 +13,29 @@
 	</div>
 
 	<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-		<div class="rounded-xl border border-white/5 bg-surface-800 p-5">
-			<p class="text-xs text-white/40 uppercase tracking-wider">Habits Today</p>
-			<p class="mt-2 text-2xl font-light text-white">0 / 0</p>
-		</div>
-		<div class="rounded-xl border border-white/5 bg-surface-800 p-5">
-			<p class="text-xs text-white/40 uppercase tracking-wider">Tasks Open</p>
+		<div class="rounded-xl border border-white/5 bg-surface-800 p-5 transition-colors hover:border-white/10">
+			<p class="text-xs uppercase tracking-wider text-white/40">Habits</p>
 			<p class="mt-2 text-2xl font-light text-white">0</p>
+			<p class="mt-1 text-xs text-white/30">active habits</p>
 		</div>
-		<div class="rounded-xl border border-white/5 bg-surface-800 p-5">
-			<p class="text-xs text-white/40 uppercase tracking-wider">Mood</p>
+		<div class="rounded-xl border border-white/5 bg-surface-800 p-5 transition-colors hover:border-white/10">
+			<p class="text-xs uppercase tracking-wider text-white/40">Tasks</p>
+			<p class="mt-2 text-2xl font-light text-white">0</p>
+			<p class="mt-1 text-xs text-white/30">open tasks</p>
+		</div>
+		<div class="rounded-xl border border-white/5 bg-surface-800 p-5 transition-colors hover:border-white/10">
+			<p class="text-xs uppercase tracking-wider text-white/40">Today's Mood</p>
 			<p class="mt-2 text-2xl font-light text-white">—</p>
+			<p class="mt-1 text-xs text-white/30">not logged yet</p>
 		</div>
 	</div>
 
-	<p class="text-sm text-white/30">Stats and charts will appear here once data flows through Jazz.</p>
+	<div class="rounded-xl border border-dashed border-white/10 bg-surface-900/50 p-8 text-center">
+		<p class="text-white/50">
+			Welcome to LifeDash! Start by creating some
+			<a href="/habits" class="text-primary-400 hover:text-primary-300">habits</a>
+			or
+			<a href="/tasks" class="text-primary-400 hover:text-primary-300">tasks</a>.
+		</p>
+	</div>
 </div>
